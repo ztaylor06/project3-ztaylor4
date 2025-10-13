@@ -3,6 +3,8 @@
 Answer the following questions directly in this file:
 * You will have a different grader again, so make sure your report includes information about your dataset.
 * How do the depths of the random-ordered integers compare to the depths of the ordered integers for each tree? Why?
+For the AVL Trees: The random ordered integers fluctuate from depths 1-7 while the ordered integers tend to stay around depths 5-6
+For the BST trees: 
 * How do the depths of each custom-data-type tree compare to each other?
 * Why do the depths of the second custom-data-type Splay Tree make sense?
 * Graph the Binary Search Tree, AVL Tree, and Splay Tree depths for the custom data type trees. Do not use C++ to graph, you can use whatever spreadsheet application or graphical programming language you prefer. You can use whatever graph is most readable to you (e.g. scatter plot, histogram, etc.).
