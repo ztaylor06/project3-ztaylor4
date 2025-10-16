@@ -136,7 +136,7 @@ private:
     int find(const Comparable &c, SplayNode* &n, int depth = 0) {
         if (n == nullptr) {
             // Reached a dead end. Value not in tree.
-            return -1;
+            return depth;
         }
         if (c < n->value) {
             // Value is less than current node. Go to node's left child.

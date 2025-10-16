@@ -11,17 +11,17 @@ using namespace std;
 
 int main() {
     // Example of writing out to a file
-    // ofstream outFile;
-    // outFile.open("../data/student_scores_extended.csv");
-    // for (int i = 999; i >= 0; --i) {
-    //     outFile << i << endl;
-    // }
-    // outFile.close();
-    //
-    // // Example of how to declare and use a tree object
+    ofstream outFileE;
+    outFileE.open("../data/example_output.csv");
+    for (int i = 999; i >= 0; --i) {
+        outFileE << i << endl;
+    }
+    outFileE.close();
+
+    // Example of how to declare and use a tree object
 
     BinarySearchTree<int> bst1;
-    for (int i = 0; i < 100; i ++) {
+    for (int i = 0; i < 100; i++) {
         bst1.add(i);
     }
 
@@ -29,7 +29,7 @@ int main() {
 
     for (int i = 0; i < 100; i++) {
         int depth = bst1.find(i);
-        OutFile << depth << "," << i << endl;
+        OutFile << "depth:" << depth << "," << "number:" << i << endl;
     }
 
     cout << bst1.find(0) << endl;
@@ -47,7 +47,7 @@ int main() {
 
     for (int i = 0; i < 100; ++i) {
         int depth = test.find(i);
-        OutFile6 << depth << "," << i << endl;
+        OutFile6 << "depth:" << depth << "," << "number:" << i << endl;
     }
 
     OutFile6.close();
@@ -61,7 +61,7 @@ int main() {
 
     for (int i = 0; i < 100; ++i) {
         int depth = avl1.find(i);
-        OutFile7 << depth  << "," << i << endl;
+        OutFile7 << "depth:" << depth << "," << "number:" << i << endl;
     }
 
     OutFile7.close();
@@ -90,9 +90,9 @@ int main() {
     for (int i = 0; i < 100; ++i) {
         int j = arr[i];
         int depth = avl2.find(j);
-        OutFile8 << depth << "," << j << endl;
-        OutFile9 << depth << "," << j << endl;
-        OutFile10 << depth << "," << j << endl;
+        OutFile8 << "depth:" << depth << "," << "number:" << j << endl;
+        OutFile9 << "depth:" << depth << "," << "number:" << j << endl;
+        OutFile10 << "depth:" << depth << "," << "number:" << j << endl;
     }
 
     BinarySearchTree<Student> bst3;
